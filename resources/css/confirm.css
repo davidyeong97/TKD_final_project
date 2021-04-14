@@ -29,9 +29,34 @@ html, body{
 }
 
 .answer a {
+    height: 7vh;
+    width: 20vw;
     box-sizing: border-box;
-    padding: 20px 9vw;
+    padding: 5px 9vw;
     background-color: #c4c4c4 !important;
     border: 0.1px solid #c4c4c4 !important;
     width: 30vw;
 }
+
+.circle1 {
+    height: 60vw;
+    width: 60vw;
+    background-color: #2D9CDB;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 100vh;
+    right: 50vw;
+    z-index:2;
+  }
+.circle2 {
+    height: 22vw;
+    width: 22vw;
+    background-color: #56CCF2;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 112vh;
+    right: 35vw;
+    z-index:1;
+  }
