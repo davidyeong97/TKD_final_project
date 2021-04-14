@@ -10,3 +10,26 @@ header {
     height: 100px;
     width: 100px;
 }
+.bottomcolor {
+    background-color: #E8F7FF;
+}
+
+.topcolor{
+    background-color: #63C1FF; 
+}
+
+.buttoncolor{
+    background-color: #9F97FD;
+    width: 35vw;
+    height: 7vh;
+    border-radius: 20px;
+    text-align: center;
+    font-weight:bold;
+    font-size:1.7em;
+    
+
+}
+.buttoncolor a{
+    color: black;
+     
+}
