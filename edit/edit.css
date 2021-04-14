@@ -51,7 +51,9 @@
     z-index:1;
   }
 .btn {
-    display: flex;
-    align-items: right;
     border-radius: 20px;
+}
+
+.back-icon {
+    color: white;
 }

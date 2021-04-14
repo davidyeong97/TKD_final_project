@@ -26,6 +26,19 @@
     font-size: 35px;
 }
 
+.dropdown-toggle::after {
+    display: none;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.btn-4 {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+
 /* content section */
 
 .content-background-1 {
