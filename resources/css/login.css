@@ -10,3 +10,17 @@ header {
     height: 100px;
     width: 100px;
 }
+.bottomcolor {
+    background-color: #E8F7FF;
+}
+
+.topcolor{
+    background-color: #63C1FF; 
+}
+
+.buttoncolor{
+    background-color: #9F97FD;
+}
+.buttoncolor a{
+    color: black;
+}
