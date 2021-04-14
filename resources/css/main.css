@@ -68,6 +68,10 @@
     color: green;
 }
 
+.content-text {
+    color: white;
+}
+
 .edit-icon {
-    color: rgb(121, 121, 121);
+    color: white;
 }
