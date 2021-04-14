@@ -33,26 +33,3 @@ header {
     color: black;
      
 }
-
-.circle1 {
-    height: 60vw;
-    width: 60vw;
-    background-color: #2D9CDB;
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    top: 80vh;
-    right: 50vw;
-    z-index:2;
-  }
-.circle2 {
-    height: 22vw;
-    width: 22vw;
-    background-color: #56CCF2;
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    top: 92vh;
-    right: 35vw;
-    z-index:1;
-  }
