@@ -1,3 +1,8 @@
+html, body{
+   background-image: url("/resources/image/Large-Triangles.svg"); 
+}
+
+
 .container {
     background-color: grey;
     border: grey solid 12px;
@@ -23,6 +28,13 @@
 #date {
     margin-bottom: 30px;
 }
+
+
+/* .btn {
+    display: flex;
+    align-items: right;
+    border-radius: 20px;
+} */
 .button {
     position: right;
 }

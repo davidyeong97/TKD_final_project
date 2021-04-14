@@ -1,3 +1,8 @@
+html, body{
+    background-image: url("/resources/image/Large-Triangles.svg"); 
+ }
+ 
+
 html {
     font-size: 16px;
 }
@@ -11,11 +16,12 @@ header {
     width: 100px;
 }
 .bottomcolor {
-    background-color: #E8F7FF;
+    background-color: #E8F7FF; 
+    background-image: url("/resources/image/Large-Triangles.svg"); 
 }
 
-.topcolor {
-    background-color: #63C1FF; 
+.topcolor{
+    background-image: url("/resources/image/deepblue.svg"); 
 }
 
 .buttoncolor {
