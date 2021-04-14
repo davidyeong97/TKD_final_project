@@ -1,4 +1,10 @@
-.icon {
+/* general style */
+
+.page-background {
+    background-color: rgb(190, 190, 190);
+}
+
+.profile-icon {
     width: 50px;
     height: 50px;
 }
@@ -13,9 +19,41 @@
     color: white;
 }
 
+/* tool bar section */
+
 .tool-bar-icon {
     color: white;
     font-size: 35px;
+}
+
+/* content section */
+
+.content-background-1 {
+    background-color: rgb(0, 132, 255);
+}
+
+.content-background-2 {
+    background-color: rgb(0, 132, 255, 0.9);
+}
+
+.content-background-3 {
+    background-color: rgb(0, 132, 255, 0.8);
+}
+
+.content-background-4 {
+    background-color: rgb(0, 132, 255, 0.7);
+}
+
+.content-background-5 {
+    background-color: rgb(0, 132, 255, 0.6);
+}
+
+.content-background-6 {
+    background-color: rgb(0, 132, 255, 0.5);
+}
+
+.content-background-7 {
+    background-color: rgb(0, 132, 255, 0.4);
 }
 
 .pi-h {
@@ -28,4 +66,8 @@
 
 .pi-l {
     color: green;
+}
+
+.edit-icon {
+    color: rgb(121, 121, 121);
 }
