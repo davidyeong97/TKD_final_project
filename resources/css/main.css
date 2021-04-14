@@ -5,6 +5,7 @@
 
 .logout-icon {
     font-size: 45px;
+    color: white;
 }
 
 .top-title {
@@ -12,11 +13,19 @@
     color: white;
 }
 
-i {
-    color: white;
-}
-
 .tool-bar-icon {
     color: white;
     font-size: 35px;
+}
+
+.pi-h {
+    color: red;
+}
+
+.pi-m {
+    color: orange;
+}
+
+.pi-l {
+    color: green;
 }
