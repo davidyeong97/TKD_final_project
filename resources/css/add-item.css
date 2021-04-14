@@ -24,10 +24,6 @@
     margin-bottom: 30px;
 }
 
-.button {
-    position: right;
-}
-
 .circle1 {
     height: 60vw;
     width: 60vw;
@@ -51,8 +47,6 @@
     z-index:1;
   }
 .btn {
-    display: flex;
-    align-items: right;
     border-radius: 20px;
 }
 
