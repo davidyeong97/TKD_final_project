@@ -1,0 +1,19 @@
+.container {
+    background-color: grey;
+    border: grey solid 15px;
+    color: white;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.form-floating {
+    background-color: grey;
+    border: grey solid 15px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.button {
+    position: right;
+}
