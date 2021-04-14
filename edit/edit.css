@@ -1,0 +1,66 @@
+.container {
+    background-color: grey;
+    border: grey solid 12px;
+    color: white;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.form-floating {
+    background-color: grey;
+    border: grey solid 15px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+}
+
+#floatingTextarea {
+    height: 300px;
+}
+
+#date {
+    margin-bottom: 30px;
+}
+
+<<<<<<< HEAD:resources/css/edit.css
+
+/* .btn {
+    display: flex;
+    align-items: right;
+    border-radius: 20px;
+} */
+=======
+.button {
+    position: right;
+}
+
+.circle1 {
+    height: 60vw;
+    width: 60vw;
+    background-color: #2D9CDB;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 80vh;
+    right: 50vw;
+    z-index:2;
+  }
+.circle2 {
+    height: 22vw;
+    width: 22vw;
+    background-color: #56CCF2;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 92vh;
+    right: 35vw;
+    z-index:1;
+  }
+.btn {
+    display: flex;
+    align-items: right;
+    border-radius: 20px;
+}
+>>>>>>> 645a4efc8a027356254f89094aa9be363c012e30:edit/edit.css
