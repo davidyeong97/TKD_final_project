@@ -1,9 +1,10 @@
 .container {
     background-color: grey;
-    border: grey solid 15px;
+    border: grey solid 12px;
     color: white;
     justify-content: center;
     margin-top: 30px;
+    border-radius: 20px;
 }
 
 .form-floating {
@@ -12,8 +13,19 @@
     color: white;
     margin-top: 50px;
     margin-bottom: 100px;
+    border-radius: 20px;
 }
 
-.button {
-    position: right;
+#floatingTextarea {
+    height: 300px;
+}
+
+#date {
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: flex;
+    align-items: right;
+    border-radius: 20px;
 }
