@@ -15,39 +15,55 @@
 </head>
 
 <body>
-    <div class="p-3 mb-2 bg-secondary">
-        <a href="/main/Main.html"><i class="fas fa-arrow-left back-icon"></i></a>
-    </div>
-    <div class="container">
-        <div class="text-center">
-            <h3>Edit Task</h3>
+    <!--arrow-->
+    <div class="container-fluid">
+        <div class="row mb-2 bg-secondary pt-5">
+            <div class="col pb-2">
+                <a href="/confirmation/Confirmation.html"><i class="fas fa-arrow-left back-icon"></i></div></a>
+            </div>
         </div>
     </div>
-  
 
-    
-    <!--edit content-->
-    <div class="form-floating">
-        <textarea class="form-control" placeholder="Edit content" id="floatingTextarea"></textarea>
-    </div>
-    
-    <div class="cover">
-    <!--edit date-->
-    <input type="date" class="form-control" id="date" name="date">
-    <span class="circle1"></span>
-    <!--confirm-->
-    <div class="row text-center">
-        <div class="col">
-            <a href="/confirmation/Confirmation.html"><button type="button" class="btn btn-secondary">Confirm</button></a>
+    <!--new task-->
+    <div class="container-fluid">
+        <div class="row mb-2 pt-5 pb-4 text-center">
+            <div class="col pb-2">
+                <input class="form-control form-control-lg text-center" type="text" placeholder="Edit Task">
+            </div>
         </div>
     </div>
-    
-    <button type="button" class="btn btn-secondary">Confirm</button>
 
-    <button type="button" class="btn btn-secondary">Confirm</button>
+    <!--add details-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col mx-2 pb-4">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Edit contents" id="floatingTextarea"></textarea>
+                </div>
+            </div>
+        </div>
     </div>
 
-  
+    <!--date-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col mx-2 pt-2">
+                <input type="date" class="form-control" id="date" name="date">
+            </div>
+        </div>
+    </div>
+
+
+    <!--confirm button-->
+    <div class="container-fluid">
+        <div class="row text-center pt-4">
+            <div class="col">
+                <a href="/main/Main.html"><button type="button" class="btn btn-secondary">Confirm</button></a>
+            </div>
+        </div>
+    </div>
+
+
 
 
 

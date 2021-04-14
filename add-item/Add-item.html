@@ -15,27 +15,68 @@
 </head>
 
 <body>
-    <!--new task-->
-    <div class="p-3 mb-2 bg-secondary text-white">
-        <a href="/main/Main.html"><i class="fas fa-arrow-left back-icon"></i></div></a>
-    <div class="container">
-        <div class="text-center">
-            <h3>New Task</h3>
+    <!--arrow-->
+    <div class="container-fluid">
+        <div class="row mb-2 bg-secondary pt-5">
+            <div class="col pb-2">
+                <a href="/main/Main.html"><i class="fas fa-arrow-left back-icon"></i></div></a>
+            </div>
         </div>
     </div>
 
-    <!--add comments-->
-    <div class="form-floating">
-        <textarea class="form-control" placeholder="Add details" id="floatingTextarea"></textarea>
+    <!--new task-->
+    <div class="container-fluid">
+        <div class="row mb-2 pt-5 pb-4 text-center">
+            <div class="col pb-2">
+                <input class="form-control form-control-lg text-center" type="text" placeholder="New Task">
+            </div>
+        </div>
+    </div>
+
+    <!--add details-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col mx-2 pb-5">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Add details" id="floatingTextarea"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--priority-->
+    <div class="container">
+        <div class="row justify-content-center ml-2 mr-2">
+            <h5>Priority Level</h5>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <span class="indigo-text mr-2">Not urgent</span>
+                    <form class="range-field w-25">
+                        <input class="border-0" type="range" min="1" max="3" />
+                    </form>
+                    <span class="indigo-text pl-2 ml-5">Urgent</span>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--date-->
-    <input type="date" class="form-control" id="date" name="date">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col mx-2 pt-5">
+                <input type="date" class="form-control" id="date" name="date">
+            </div>
+        </div>
+    </div>
 
-    <!--confirm-->
-    <div class="row text-center">
-        <div class="col">
-            <a href="/main/Main.html"><button type="button" class="btn btn-secondary">Confirm</button></a>
+    <!--confirm button-->
+    <div class="container-fluid">
+        <div class="row text-center pt-4">
+            <div class="col">
+                <a href="/main/Main.html"><button type="button" class="btn btn-secondary">Confirm</button></a>
+            </div>
         </div>
     </div>
 
