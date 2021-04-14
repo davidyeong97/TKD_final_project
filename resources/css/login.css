@@ -14,11 +14,11 @@ header {
     background-color: #E8F7FF;
 }
 
-.topcolor{
+.topcolor {
     background-color: #63C1FF; 
 }
 
-.buttoncolor{
+.buttoncolor {
     background-color: #9F97FD;
     width: 35vw;
     height: 7vh;
@@ -26,10 +26,4 @@ header {
     text-align: center;
     font-weight:bold;
     font-size:1.7em;
-    
-
-}
-.buttoncolor a{
-    color: black;
-     
 }

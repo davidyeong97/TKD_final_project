@@ -1,7 +1,13 @@
 /* general style */
 html {
-    font-size: 20;
+    font-size: 1rem;
 }
+
+@include media-breakpoint-up(md) {
+    html {
+      font-size: 10rem;
+    }
+  }
 
 .page-background {
     background-color: rgb(190, 190, 190);
@@ -18,7 +24,7 @@ html {
 }
 
 .top-title {
-    font-size: 30px;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -34,7 +40,7 @@ html {
     background-color: transparent;
     border-color: transparent;
     box-shadow: none;
-}
+}   
 
 .btn-4 {
     background-color: transparent;
@@ -85,9 +91,8 @@ html {
 }
 
 .form-check-input {
-    height: 25px;
-    width: 25px;
-    margin: 0;
+    height: 15px;
+    width: 15px;
 }
 
 .content-text {
