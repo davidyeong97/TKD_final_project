@@ -3,7 +3,7 @@ body {
     background-image: url("/resources/image/Large-Triangles.svg");
 }
 
-.container {
+.priority-box {
     background-color: grey;
     border: grey solid 12px;
     color: white;
