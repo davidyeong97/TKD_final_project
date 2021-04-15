@@ -1,6 +1,6 @@
 html, body{
    font-size: 30px;
-   background-image: url("/resources/image/Large-Triangles.svg");  
+   background-image: url("../resources/image/Large-Triangles.svg");  
 }
 
 #question {
@@ -8,7 +8,7 @@ html, body{
 }
 
 #question p {
-    background-image: url("/resources/image/deepblue.svg"); 
+    background-image: url("../resources/image/deepblue.svg"); 
     color:white;
     border-radius: 13px;
     padding: 35px 0;
