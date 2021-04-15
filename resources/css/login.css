@@ -1,5 +1,9 @@
 body{
-    background-image: url("../image/Large-Triangles.svg"); 
+    background-image: url("/resources/image/Large-Triangles.svg"); 
+ }
+ 
+
+html {
     font-size: 16px;
  }
 
