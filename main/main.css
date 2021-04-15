@@ -1,21 +1,16 @@
 /* general style */
-* {
-    margin: 0;
-    padding: 0;
-   }
-
 html {
     font-size: 15px;
 }
 
 @media only screen and (min-width: 768px) {
     html {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
-    input[type="checkbox"] { 
+    /* input[type="checkbox"] { 
         height: 3rem;
         width: 3rem;
-    }
+    } */
   }
 
 html, body{
@@ -89,10 +84,6 @@ html, body{
 
 .content-background-7 {
     background-color: rgb(0, 132, 255, 0.4);
-}
-
-.pim {
-    margin-left: 2rem;
 }
 
 .pi-h {
