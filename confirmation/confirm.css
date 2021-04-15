@@ -1,48 +1,28 @@
 html, body{
-    font-size: 30px;
-   background-image: url("/resources/image/Large-Triangles.svg"); 
-    height: 100%;
-    width:100%;
-    overflow: hidden;
+   font-size: 30px;
+   background-image: url("/resources/image/Large-Triangles.svg");  
 }
 
-.question p {
+#question {
+    margin: 100px 0;
+}
+
+#question p {
     background-image: url("/resources/image/deepblue.svg"); 
     color:white;
-    height: 100px;
-    width: 75vw;
     border-radius: 13px;
-    text-align: center;
-    padding-top:1rem ;
-    z-index:10;
+    padding: 35px 0;
 }
 
-.question {
-    display:flex;
-    justify-content: center;
-    position:relative;
-    top: 20vh;
-
+#answer{
+    margin: 100px 0;
 }
 
-.answer {
-    box-sizing: border-box;
-    display:flex;
-    justify-content: space-evenly;
-    position:relative;
-    top: 30vh;
-}
+#answer a {
+   background-image: url("/resources/image/deepblue.svg"); 
+    border: 0px ;
+    padding: 20px 60px;
 
-.answer a {
-    height: 7vh;
-    width: 20vw;
-    box-sizing: border-box;
-    padding: 5px 9vw;
-    background-image: url("/resources/image/deepblue.svg");  !important;
-    border: 0.1px solid white !important;
-    width: 30vw;
 }
 
 
-
-   }
