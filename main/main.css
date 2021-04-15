@@ -98,6 +98,11 @@ html, body{
     color: green;
 }
 
+.slider-text {
+    color: white;
+    font-size: 0.5rem;
+}
+
 .form-check-input {
     height: 15px;
     width: 15px;
