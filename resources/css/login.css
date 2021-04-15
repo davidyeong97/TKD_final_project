@@ -25,11 +25,14 @@ header {
 }
 
 .buttoncolor {
-    background-color: #9F97FD;
-    width: 35vw;
-    height: 7vh;
+    background: url("/resources/image/deepblue.svg"); 
+
     border-radius: 20px;
     text-align: center;
     font-weight:bold;
     font-size:1.7em;
+    border: 1px solid white;
+    color: rgb(221, 221, 221);
+    padding: 25px 50px;
+
 }
