@@ -14,7 +14,7 @@ html {
   }
 
 html, body{
-    background-image: url("/resources/image/Large-Triangles.svg"); 
+    background-image: url("./resources/image/Large-Triangles.svg"); 
  }
  
 .page-background {

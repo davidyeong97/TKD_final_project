@@ -19,7 +19,7 @@ html, body{
 }
 
 #answer a {
-   background-image: url("/resources/image/deepblue.svg"); 
+   background-image: url("./resources/image/deepblue.svg"); 
     border: 0px ;
     padding: 20px 60px;
 
