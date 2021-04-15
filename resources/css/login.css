@@ -1,5 +1,5 @@
 body{
-    background-image: url("/resources/image/Large-Triangles.svg"); 
+    background-image: url("../image/Large-Triangles.svg"); 
     font-size: 16px;
  }
 
@@ -9,11 +9,11 @@ body{
 }
 
 .topcolor{
-    background-image: url("/resources/image/deepblue.svg"); 
+    background-image: url("../image/deepblue.svg"); 
 }
 
 .buttoncolor {
-    background: url("/resources/image/deepblue.svg"); 
+    background: url("../image/deepblue.svg"); 
     border-radius: 20px;
     text-align: center;
     font-weight:bold;
