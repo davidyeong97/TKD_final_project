@@ -29,3 +29,7 @@ body {
     color: white;
     font-size: 2rem;
 }
+
+.slider.slider-horizontal {
+    width: 400px;
+}
