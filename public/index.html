@@ -26,14 +26,21 @@
                 </div>
 
                 <form method="POST" id='loginForm' class='not-show' action='http://localhost:8080/login'>
-                    <div class="form-group row py-5">
+                    <div class="form-group row py-5 mx-0">
                         <div class="col d-flex justify-content-center">
                             <i class="fas fa-id-badge fa-2x"></i>
                         </div>
                         <div class="col-8">
-                            <div class="input-group mb-3 d-flex justify-content-center">
+                            <div class="input-group mb-3 d-flex justify-content-center ">
                                 <span class="input-group-text" id="basic-addon1">@</span>
                                 <input type="text" class="form-control mr-3" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3 d-flex justify-content-center loginhidden">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control is-invalid mr-3" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                <div class="invalid-feedback">
+                                    Invalid!
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -45,14 +52,27 @@
                             <label for="exampleInputPassword1"></label>
                             <input type="password" class="form-control mr-3" id="exampleInputPassword1" placeholder="Password">
                         </div>
+
                     </div>
-                    <div class="row justify-content-center py-5">
-                        <input type="submit" class="btn-lg buttoncolor" value="Login">
+                    <div class="row justify-content-center text-center pt-5 pb-1">
+                        <input type="submit" class="btn-lg loginbutton" value="Login">
+                    </div>
+                    <div class="row justify-content-center text-center">
+                        <div class="col py-5">
+                            <input type="submit" class="btn btn-sm anotherbutton" value="Create account">
+                        </div>
+                        <div class="col py-5">
+                            <input type="submit" class="btn btn-sm anotherbutton" value="Forget password">
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
+    <!-- create account -->
+
+
 
 
     <script src="./index.js"></script>

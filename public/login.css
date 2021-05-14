@@ -15,13 +15,30 @@ html {
     background-image: url("./resources/image/deepblue.svg");
 }
 
-.buttoncolor {
+.loginbutton {
     background: url("./resources/image/deepblue.svg");
     border-radius: 20px;
     text-align: center;
     font-weight: bold;
-    font-size: 1.7em;
+    font-size: 1.7rem;
     border: 1px solid white;
     color: rgb(221, 221, 221);
     padding: 20px 50px;
+}
+
+.anotherbutton {
+    background: url("./resources/image/deepblue.svg");
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid white;
+    color: rgb(221, 221, 221);
+}
+
+.row {
+    margin: 0;
+}
+
+.loginhidden {
+    display: none !important;
 }
