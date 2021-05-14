@@ -42,3 +42,80 @@ html {
 .loginhidden {
     display: none !important;
 }
+
+
+/* creat account */
+
+.creatAccount {
+    display: none !important;
+}
+
+
+/* Style all input fields */
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+
+
+/* Style the submit button */
+
+input[type=submit] {
+    background: url("./resources/image/deepblue.svg");
+    color: white;
+}
+
+
+/* Style the container for inputs */
+
+.container {
+    padding: 5px;
+}
+
+
+/* The message box is shown when the user clicks on the password field */
+
+#message {
+    display: none;
+    color: #000;
+    position: relative;
+    padding: 5px;
+    margin-top: 0px;
+}
+
+#message p {
+    padding: 5px 0px;
+    font-size: 15px;
+}
+
+
+/* Add a green text color and a checkmark when the requirements are right */
+
+.valid {
+    color: white;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+
+/* Add a red text color and an "x" when the requirements are wrong */
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
