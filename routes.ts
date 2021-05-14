@@ -9,9 +9,9 @@ export function createRoute (controller: Controller) {
     routes.get('/todolist', controller.getTodoList);
     routes.post('/todolist', controller.postTodoList);
     routes.delete('/todolist/:id', controller.deleteTodoList);
+    routes.put('/todolist/:id', controller.putTodoList);
     
     // [todo] CRUD task
-    // routes.put('/todolist', controller.putTodoList);
     
     // [todo] register
     routes.get('/profile', controller.getprofile);

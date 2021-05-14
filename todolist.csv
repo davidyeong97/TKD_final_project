@@ -1,11 +1,7 @@
-id,content,dueDate,inputDate,category
-1,testing,29/5/2021,11/5/2021,work
-2,testing,29/5/2021,11/5/2021,study
-3,testing,29/5/2021,11/5/2021,family
-4,testing,29/5/2021,11/5/2021,friend
-5,testing,29/5/2021,11/5/2021,null
-6,testing,29/5/2021,11/5/2021,friend
-7,testing,29/5/2021,11/5/2021,work
-8,testing,29/5/2021,11/5/2021,null
-9,testing,29/5/2021,11/5/2021,study
-10,testing,29/5/2021,3/5/2021,undefined
+id,name,description,assignedto,duedate,status
+1,Fa jer,Singing contest,Anson Loo,29/5/2021,Pending
+2,Fa jer,Adv. shooting,Jer Lai,29/5/2021,Confirmed
+3,Fa jer,MV shooting,Keung Too,29/5/2021,Pending
+4,Fa jer,Photo shooting,Error,29/5/2021,Confirmed
+5,Fa jer,MV Shooting,Dee Gor,29/5/2021,Pending
+6,Fa jer,TV Show,Fat boy,29/5/2021,Updated
