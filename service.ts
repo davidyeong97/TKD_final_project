@@ -26,10 +26,20 @@ export class Service {
         return result;
     }
 
-    async addTodoList(id: string, content: string | null, dueDate: string | null, inputDate: string | null, picture: string | null) {
+    async addTodoList(
+        post: {
+            id: string,
+            name?: string,
+            description?: string,
+            assignedto?: string,
+            duedate?: string,
+            status?: string,
+        }
+    ) {
 
         const filePath = __dirname + '/TodoList.csv'
-        const reformedInput = "\n" + id + "," + content + "," + dueDate + "," + inputDate + "," + picture
+        console.log(post)
+        const reformedInput = "\n" + post.id + "," + post.name + "," + post.description + "," + post.assignedto + "," + post.duedate + "," + post.status
 
         await fs.appendFile(filePath, reformedInput, (e) => console.log(e))
 
@@ -48,15 +58,38 @@ export class Service {
             if (lines[i] == undefined || lines[i].trim() == "") continue;
             let words = lines[i].split(',');
             if (words[0] == id) continue;
-            for (let j = 0; j < lines[i].length; j++) {
-                if (words[j] == undefined || words[j].trim() == "") continue;
-                result = result + "," + words[j]
-            }
-            result = result + "\n"
+            result = result + lines[i] + "\n"
         }
         await fs.promises.writeFile(filePath, result)
 
         return { 'result': 'deleted' }
     }
 
+    // [done]
+    async updateTodoList(id: string, name?: string, description?: string, assignedto?: string, duedate?: string, status?: string) {
+
+        const filePath = __dirname + '/TodoList.csv'
+        const data = await fs.promises.readFile(filePath, 'utf-8')
+        const lines = data.split('\n')
+        let result: string = "";
+        // console.log("service " + id + name + description + assignedto + duedate + status )
+        for (let i = 0; i < lines.length; i++) {
+            if (lines[i] == undefined || lines[i].trim() == "") continue;
+            let words = lines[i].split(',');
+            console.log(`words[0]: ${words[0]}, id: ${id}, ${words[0] == id}`)
+            if (words[0] == id) {
+                words[1] = "" + name;
+                words[2] = "" + description;
+                words[3] = "" + assignedto;
+                words[4] = "" + duedate;
+                words[5] = "" + status;
+                result = result + words.join(',') + "\n"
+            } else {
+                result = result + lines[i] + "\n"
+            }
+        }
+        await fs.promises.writeFile(filePath, result)
+
+        return { 'result': 'updated' }
+    }
 }
