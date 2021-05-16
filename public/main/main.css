@@ -40,6 +40,9 @@ body {
     color: white;
 }
 
+.displayNone {
+    display: none;
+}
 
 /* tool bar section */
 
@@ -67,6 +70,10 @@ body {
     outline: none;
 }
 
+.fixingshit {
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
 /* content section */
 
@@ -98,7 +105,7 @@ body {
 }
 
 .titletext {
-    font-size: 19px;
+    font-size: 1.3rem;
 }
 
 .contenttext {
@@ -106,6 +113,7 @@ body {
     background-color: white;
     border: grey solid 6px;
     border-radius: 15px;
+    font-size: 1.1rem;
 }
 
 datalist {
@@ -114,4 +122,18 @@ datalist {
     color: white;
     width: 100%;
     font-size: 15px;
+}
+
+/* add page */
+
+#addPage label {
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+/* edit page */
+#editPage label {
+    color: white;
+    font-size: 1.2rem;
 }
