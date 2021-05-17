@@ -17,3 +17,12 @@ fetchLoginForm.addEventListener('submit', async(event) => {
         `<div>username: ${jsonResponse.username}</div>
     <div>password: ${jsonResponse.password}</div>`
 })
+
+function myFunction() {
+    var x = document.getElementById("creat");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
