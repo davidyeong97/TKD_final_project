@@ -21,6 +21,7 @@ const toggleAdd = () => {
     document.getElementById('logout-button').classList.toggle('displayNone')
     backButton2.classList.toggle('displayNone')
     addButton.classList.toggle('displayNone')
+    return
 }
 
 backButton2.addEventListener("click", toggleAdd)
@@ -79,7 +80,7 @@ renderContentPage()
 addTask.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    let id = '_' + Math.random().toString(36).substr(2, 9);
+    let ranId = Math.random().toString(36).substr(2, 9);
 
     fetch(url, {
             method: 'POST',
@@ -87,7 +88,7 @@ addTask.addEventListener('submit', (e) => {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({ 
-                id: id,
+                id: ranId,
                 name: inputName.value,
                 description: inputDescription.value,
                 assignedto: inputAssignedTo.value,
@@ -113,10 +114,11 @@ dataArea.addEventListener('click', (e) => {
     let deleteButtonPressed = e.target.id == 'delete-button'
     let editButtonPressed = e.target.id == 'edit-button'
 
-    let id = e.target.parentElement.parentElement.parentElement.dataset.id
+    let dataId = e.target.parentElement.parentElement.parentElement.dataset.id
+    
 
     if (deleteButtonPressed) {
-        fetch(`${url}/${id}`, {
+        fetch(`${url}/${dataId}`, {
             method: 'DELETE'
             })
             .then(res => res.json())
@@ -141,13 +143,13 @@ dataArea.addEventListener('click', (e) => {
 
     addSubmitButton.addEventListener('click', (e) => {
         e.preventDefault();
-        fetch(`${url}/${id}`, {
-            method: 'PATCH',
+        fetch(`${url}/${dataId}`, {
+            method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({ 
-                    id: id,
+                    id: dataId,
                     name: inputName.value,
                     description: inputDescription.value,
                     assignedto: inputAssignedTo.value,
@@ -155,7 +157,9 @@ dataArea.addEventListener('click', (e) => {
                     status: inputStatus.value,
                 })
         })
-        .then(res => res.json())
-        .then(() => renderContentPage())
+            .then(res => res.json())
+            .then(() => renderContentPage())
+            // .then(toggleAdd())
+            // .then(addPageForm.reset())
     })
 })
