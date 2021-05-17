@@ -1,75 +1,118 @@
+body {
+    background-image: url("./resources/image/Large-Triangles.svg");
+}
+
 html {
-    font-size: 14px;
+    font-size: 16px;
 }
 
-#navbar {
+.icon {
+    height: 100px;
+    width: 100px;
+}
+
+.topcolor {
+    background-image: url("./resources/image/deepblue.svg");
+}
+
+.loginbutton {
+    background: url("./resources/image/deepblue.svg");
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    border: 1px solid white;
+    color: rgb(221, 221, 221);
+    padding: 20px 50px;
+}
+
+.loginhidden {
+    display: none !important;
+}
+
+.anotherbutton {
+    background: url("./resources/image/deepblue.svg");
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid white;
+    color: rgb(221, 221, 221);
+}
+
+.row {
     margin: 0;
-    padding: 0;
-    display: flex;
+}
+
+.notShow {
+    display: none !important;
+}
+
+
+/* Style all input fields */
+
+input {
     width: 100%;
-    overflow: hidden;
-    align-items: flex-end;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 5px;
 }
 
-.navbar-link {
-    width: 100%;
-    height: 3rem;
-    background-color: #eee;
-    display: flex;
-    justify-content: center;
+
+/* Style the submit button */
+
+input[type=submit] {
+    background: url("./resources/image/deepblue.svg");
+    color: white;
 }
 
-.dock {
-    --scale: 1;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.dock li {
-    font-size: calc(1rem * var(--scale));
-    padding: 0 0.5rem;
-    cursor: default;
-    position: relative;
-    transition: 155ms all ease-out;
-    filter: drop-shadow(2px 4px 8px #585858);
-}
+/* Style the container for inputs */
 
-@keyframes loading {
-    0%,
-    100% {
-        transform: translateY(0px);
-    }
-    60% {
-        transform: translateY(-40px);
-    }
-}
-
-.button{
-    width: fit-content;
-    height: fit-content;
+.container {
     padding: 5px;
-    border-radius: 5px;
-    background-color: chartreuse;
-    border: 0;
-    box-shadow: 0 8px 6px -6px black;
 }
 
-.btn {
-    padding: 5px;
-    margin: 5px;
-    width: 100%;
-    height: 1rem;
-}
 
-.not-show {
+/* The message box is shown when the user clicks on the password field */
+
+#message {
     display: none;
+    color: #000;
+    position: relative;
+    padding: 5px;
+    margin-top: 0px;
 }
 
-#fetch-area {
-    margin: 20px;
-    background-color: aliceblue;
+#message p {
+    padding: 5px 0px;
+    font-size: 15px;
+}
+
+
+/* Add a green text color and a checkmark when the requirements are right */
+
+.valid {
+    color: white;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+
+/* Add a red text color and an "x" when the requirements are wrong */
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
 }
