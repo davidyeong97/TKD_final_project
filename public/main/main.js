@@ -36,13 +36,13 @@ async function renderContentPage() {
         <div class="container-fluid" data-id="${element.id}" data-name="${element.name}" data-description="${element.description}" data-assignedto="${element.assignedto}" data-duedate="${element.duedate}" data-status="${element.status}" >
             <div class="row content-background-1 py-3 py-md-3" style="box-shadow: 0 0 5px #333;">
                 <div class="col d-flex justify-content-center">
-                    <button class="toolbutton" id="delete-button"><i class="fas fa-trash delete-icon"></i></button>
+                    <button class="toolbutton" id="delete-button"><i class="fas fa-trash delete-icon id="delete-icon"></i></button>
                 </div>
                 <div class="col-8 d-flex justify-content-center">
                     <div class="content-text titletext">${element.name}</div>
                 </div>
                 <div class="col d-flex justify-content-center">
-                    <button class="toolbutton" id="edit-button"><i class="fas fa-chevron-right edit-icon"></i></button>
+                    <button class="toolbutton" id="edit-button"><i class="fas fa-chevron-right edit-icon id="edit-icon"></i></button>
                 </div>
                 <div class="container-fluid">
                     <div class="row p-3 mt-3 contenttext">
@@ -111,8 +111,8 @@ addTask.addEventListener('submit', (e) => {
 
 dataArea.addEventListener('click', (e) => {
     e.preventDefault();
-    let deleteButtonPressed = e.target.id == 'delete-button'
-    let editButtonPressed = e.target.id == 'edit-button'
+    let deleteButtonPressed = (e.target.id == 'delete-button' || e.target.id == 'delete-icon')
+    let editButtonPressed = (e.target.id == 'edit-button' || e.target.id == 'edit-icon')
 
     let dataId = e.target.parentElement.parentElement.parentElement.dataset.id
     
